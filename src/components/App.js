@@ -8,10 +8,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <GetImageForm>
-          <GetImageButton />
-          <ImageDisplay />
-        </GetImageForm>
+        <GetImageForm />
       </div>
     );
   }

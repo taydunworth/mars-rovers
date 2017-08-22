@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
-import '../styles/App.css';
 
-export default class ImageDisplay extends Component {
-  render(){
-    return (
-      <div>
-      </div>
-    );
-  }
-}
+const ImageDisplay = ({images}) =>
+  <ul>
+    {images.map((image) =>
+      <li key={image.id}>
+        <img src={image.img_src} alt={image.earth_date} />
+      </li>
+    )}
+  </ul>
+
+export default ImageDisplay
